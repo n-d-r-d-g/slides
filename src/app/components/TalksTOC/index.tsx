@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useCallback } from "react";
-import { TalkData } from "../types";
+import { TalkData } from "../../types";
 
 type TalksTOCProps = {
   talks: TalkData;

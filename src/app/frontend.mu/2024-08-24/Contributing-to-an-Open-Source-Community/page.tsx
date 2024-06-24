@@ -1,3 +1,5 @@
+import { ContributingToAnOpenSourceCommunitySlides } from "./Slides";
+
 export default function ContributingToAnOpenSourceCommunity() {
-  return <h1>Contributing to an Open Source Community</h1>;
+  return <ContributingToAnOpenSourceCommunitySlides />;
 }
