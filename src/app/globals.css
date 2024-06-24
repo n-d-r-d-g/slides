@@ -20,7 +20,7 @@
   }
 
   h1 {
-    @apply text-2xl lg:text-3xl font-black;
+    @apply text-2xl lg:text-3xl font-bold;
   }
 
   body {
