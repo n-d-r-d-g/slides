@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --clr-fg: #242424;
+  --clr-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-fg: #eeeeee;
+    --clr-bg: #000000;
+  }
+}
+
+@layer base {
+  a {
+    @apply underline underline-offset-2 hover:underline-offset-4 hover:text-blue-800 dark:hover:text-blue-300 transition-all;
+  }
+
+  h1 {
+    @apply text-2xl lg:text-3xl font-black;
+  }
+
+  body {
+    @apply text-sm lg:text-base;
+
+    color: var(--clr-fg);
+    background-color: var(--clr-bg);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
