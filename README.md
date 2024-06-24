@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Slides
 
-## Getting Started
+This project contains the slides I use for my talks.
 
-First, run the development server:
+## Motivation
+
+Using local presentation slides comes with its pitfalls; transfer & backup presentation files, prone to loss, not fully customizable.
+
+One alternative is proprietary cloud services like Google Slides, but the fact that it's proprietary is creates dependency on the platform.
+
+Using code to build slides solves a few problems; no need to transfer or backup presentation files, source control prevents loss, fully customizable via code, no need for proprietary platforms to host slides.
+
+## Pitfalls
+
+The main current concern is the need for an Internet connection to view the slides.
+
+A solution can be to build the project locally on the machine that's going to be used for the presentation:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
