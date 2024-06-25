@@ -1,56 +1,43 @@
 import { readdirSync } from "node:fs";
+import { SlidesTOC } from "./components/SlidesTOC";
 import { PAGE_PATH_ENDING } from "./constants";
-import { TalkData } from "./types";
-import { TalksTOC } from "./components/TalksTOC";
+import { TOC } from "./utils/classes/TOC";
+
+function retrieveTOCNodes() {
+  const appFilePaths = readdirSync("./src/app", { recursive: true });
+  const tocFilePaths = appFilePaths.filter((filePath) => {
+    const isHomePagePath = filePath === PAGE_PATH_ENDING;
+    const isPagePath = (filePath as string).endsWith(PAGE_PATH_ENDING);
+    const shouldPathBeInTOC = !isHomePagePath && isPagePath;
+
+    return shouldPathBeInTOC;
+  });
+  const toc = new TOC();
+
+  tocFilePaths.forEach((filePath) => {
+    const filePathWithoutPageEnding = (filePath as string).replace(
+      `/${PAGE_PATH_ENDING}`,
+      ""
+    );
+
+    toc.addNodeByFilePath(filePathWithoutPageEnding);
+  });
+
+  return toc;
+}
 
 export default async function Home() {
-  const talks = readdirSync("./src/app", { recursive: true })
-    // const talks = [
-    //   "a/b/c/page.tsx",
-    //   "a/b/d/page.tsx",
-    //   "a/b/page.tsx",
-    //   "a/b/c/e/page.tsx",
-    //   "a/b/c/f/page.tsx",
-    // ]
-    .filter((filePath) => {
-      const isHomePagePath = filePath === PAGE_PATH_ENDING;
-      const isPagePath = (filePath as string).endsWith(PAGE_PATH_ENDING);
-      const isValidPath = !isHomePagePath && isPagePath;
+  try {
+    const toc = retrieveTOCNodes();
+    const tocNodes = toc.nodes;
 
-      return isValidPath;
-    })
-    .reduce((prevTOC, filePath) => {
-      const pathParts = (filePath as string).split("/");
-
-      let tempTOC = prevTOC;
-
-      pathParts.forEach((part, index) => {
-        if (index >= pathParts.length - 1) return;
-
-        if (index === pathParts.length - 2)
-          return tempTOC.set(
-            part,
-            (filePath as string).replace(`/${PAGE_PATH_ENDING}`, "")
-          );
-
-        if (tempTOC instanceof Map && !tempTOC.has(part)) {
-          tempTOC.set(part, new Map<string, TalkData>());
-        }
-
-        const nestedTOC = tempTOC.get(part);
-
-        if (nestedTOC instanceof Map) {
-          tempTOC = nestedTOC;
-        }
-      });
-
-      return prevTOC;
-    }, new Map<string, TalkData>());
-
-  return (
-    <main className="flex min-h-screen flex-col px-4 py-12 lg:p-24 bg-inherit">
-      <h1 className="mb-6 lg:mb-8">Table of contents</h1>
-      <TalksTOC talks={talks} />
-    </main>
-  );
+    return (
+      <main className="flex min-h-screen flex-col px-4 py-12 lg:p-24 bg-inherit">
+        <h1 className="mb-6 lg:mb-8">Table of contents</h1>
+        <SlidesTOC nodes={tocNodes} />
+      </main>
+    );
+  } catch (e) {
+    console.log("Error while building table of contents :>> ", e);
+  }
 }
