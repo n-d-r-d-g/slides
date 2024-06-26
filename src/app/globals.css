@@ -29,6 +29,15 @@
     color: var(--clr-fg);
     background-color: var(--clr-bg);
   }
+
+  /* Override KBar styles */
+  body > div:not([class]) {
+    @apply text-gray-700;
+
+    & input {
+      @apply bg-white;
+    }
+  }
 }
 
 @layer utilities {
