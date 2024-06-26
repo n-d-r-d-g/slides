@@ -20,3 +20,9 @@ A solution can be to build the project locally on the machine that's going to be
 npm run build
 npm start
 ```
+
+# Issues
+
+## `deckTheme` is undefined in Dev mode
+
+Sometimes, Spectacle does not get loaded properly on cold start. Modify the URL in your browser's address bar so that it points to the homepage, e.g. localhost:3000, then press `Enter`.
