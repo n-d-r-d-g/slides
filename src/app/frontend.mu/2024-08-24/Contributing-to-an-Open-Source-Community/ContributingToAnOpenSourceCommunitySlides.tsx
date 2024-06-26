@@ -3,7 +3,7 @@
 import { DeckTemplate } from "@/app/components/DeckTemplate";
 import { DECK_THEMES } from "@/app/constants";
 import { useTheme } from "next-themes";
-import { Deck, Heading, Slide } from "spectacle";
+import { Deck, FlexBox, Heading, Slide } from "spectacle";
 
 export function ContributingToAnOpenSourceCommunitySlides() {
   const { resolvedTheme } = useTheme();
@@ -13,16 +13,21 @@ export function ContributingToAnOpenSourceCommunitySlides() {
   return (
     <Deck
       theme={deckTheme}
-      template={({ slideNumber, numberOfSlides }) => (
-        <DeckTemplate
-          slideNumber={slideNumber}
-          numberOfSlides={numberOfSlides}
-          theme={deckTheme}
-        />
-      )}
+      template={({ slideNumber, numberOfSlides }) => {
+        return (
+          <DeckTemplate
+            slideNumber={slideNumber}
+            numberOfSlides={numberOfSlides}
+          />
+        );
+      }}
     >
       <Slide>
-        <Heading>Welcome to Slide #1</Heading>
+        <FlexBox height="100%">
+          <Heading className="leading-snug text-balance">
+            Contributing to an Open Source Community
+          </Heading>
+        </FlexBox>
       </Slide>
       <Slide>
         <Heading>Welcome to Slide #2</Heading>

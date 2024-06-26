@@ -32,7 +32,7 @@ export const DECK_THEMES = {
   light: {
     colors: {
       primary: "red",
-      secondary: "#000000",
+      secondary: "#242424",
       tertiary: "#ffffff",
       quaternary: "#595959",
       quinary: "purple",
@@ -41,7 +41,7 @@ export const DECK_THEMES = {
   dark: {
     colors: {
       primary: "brown",
-      secondary: "#ffffff",
+      secondary: "#efefef",
       tertiary: "#000000",
       quaternary: "#959595",
       quinary: "salmon",
