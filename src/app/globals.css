@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --clr-fg: #242424;
-  --clr-bg: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --clr-fg: #eeeeee;
-    --clr-bg: #000000;
-  }
-}
-
 @layer base {
   a {
     @apply underline underline-offset-2 hover:underline-offset-4 hover:text-blue-800 dark:hover:text-blue-300 transition-[text-underline-offset];
@@ -24,18 +12,61 @@
   }
 
   body {
-    @apply text-sm lg:text-base;
-
-    color: var(--clr-fg);
-    background-color: var(--clr-bg);
+    @apply text-sm lg:text-base text-gray-900 bg-white dark:text-gray-100 dark:bg-black;
   }
 
   /* Override KBar styles */
   body > div:not([class]) {
-    @apply text-gray-700;
+    @apply text-gray-700 dark:text-white;
 
-    & input {
-      @apply bg-white;
+    & > div {
+      /* Container */
+      & > div {
+        @apply bg-white dark:bg-zinc-800;
+
+        & > div {
+          /* Search field */
+          & input {
+            @apply text-black bg-white dark:text-white dark:bg-zinc-800;
+          }
+
+          /* Results container */
+          & > div {
+            @apply bg-white dark:bg-zinc-900;
+
+            & > #kbar-listbox {
+              /* Result group headings */
+              & > #kbar-listbox-item-0,
+              #kbar-listbox-item-5 {
+                & > div {
+                  @apply m-0 px-2 box-border text-slate-600 bg-transparent dark:text-slate-300;
+                }
+              }
+
+              /* Results */
+              &
+                > div[id^="kbar-listbox-item"]:not(
+                  #kbar-listbox-item-0,
+                  #kbar-listbox-item-5
+                ) {
+                @apply text-base text-gray-600 bg-white [&[aria-selected="true"]]:text-black [&[aria-selected="true"]]:bg-blue-300 dark:text-gray-100 dark:bg-zinc-900 dark:[&[aria-selected="true"]]:text-black dark:[&[aria-selected="true"]]:bg-blue-300 transition-colors;
+
+                & > div {
+                  @apply bg-transparent;
+
+                  /* Keyboard shortcuts container */
+                  & > span {
+                    /* Keyboard shortcuts */
+                    & > kbd {
+                      @apply text-xs items-baseline text-zinc-600 bg-zinc-50 border-zinc-200 dark:text-zinc-100 dark:bg-zinc-800 dark:border-zinc-700;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
