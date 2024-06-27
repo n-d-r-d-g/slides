@@ -31,7 +31,7 @@ export const PAGE_PATH_ENDING = "page.tsx";
 export const DECK_THEMES = {
   light: {
     colors: {
-      primary: "red",
+      primary: "#242424",
       secondary: "#242424",
       tertiary: "#ffffff",
       quaternary: "#595959",
@@ -40,7 +40,7 @@ export const DECK_THEMES = {
   },
   dark: {
     colors: {
-      primary: "brown",
+      primary: "#efefef",
       secondary: "#efefef",
       tertiary: "#000000",
       quaternary: "#959595",

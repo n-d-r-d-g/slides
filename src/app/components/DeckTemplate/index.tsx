@@ -1,6 +1,6 @@
 "use client";
 
-import { DECK_THEMES } from "@/app/constants";
+import { DECK_THEMES } from "../../constants";
 import { useTheme } from "next-themes";
 import { Box, FullScreen } from "spectacle";
 
@@ -16,7 +16,7 @@ export function DeckTemplate({ slideNumber, numberOfSlides }: Props) {
 
   return (
     <footer className="w-full flex flex-row justify-between items-center px-8 absolute bottom-7 z-10">
-      <Box title="Toggle fullscreen" className="cursor-pointer">
+      <Box title={"Toggle fullscreen"} className="cursor-pointer">
         <FullScreen size={20} color={deckTheme.colors.quaternary} />
       </Box>
       <p className="text-sm">
