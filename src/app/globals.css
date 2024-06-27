@@ -22,7 +22,7 @@
     & > div {
       /* Container */
       & > div {
-        @apply bg-white dark:bg-zinc-800;
+        @apply bg-white dark:bg-zinc-900;
 
         & > div {
           /* Search field */
@@ -32,12 +32,9 @@
 
           /* Results container */
           & > div {
-            @apply bg-white dark:bg-zinc-900;
-
             & > #kbar-listbox {
               /* Result group headings */
-              & > #kbar-listbox-item-0,
-              #kbar-listbox-item-5 {
+              & > :is(#kbar-listbox-item-0, #kbar-listbox-item-5) {
                 & > div {
                   @apply m-0 px-2 box-border text-slate-600 bg-transparent dark:text-slate-300;
                 }
@@ -53,14 +50,11 @@
 
                 & > div {
                   @apply bg-transparent;
+                }
 
-                  /* Keyboard shortcuts container */
-                  & > span {
-                    /* Keyboard shortcuts */
-                    & > kbd {
-                      @apply text-xs items-baseline text-zinc-600 bg-zinc-50 border-zinc-200 dark:text-zinc-100 dark:bg-zinc-800 dark:border-zinc-700;
-                    }
-                  }
+                /* Keyboard shortcuts */
+                & kbd {
+                  @apply text-xs items-baseline text-zinc-600 bg-zinc-50 border-zinc-200 dark:text-zinc-100 dark:bg-zinc-800 dark:border-zinc-700;
                 }
               }
             }
