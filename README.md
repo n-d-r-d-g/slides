@@ -12,16 +12,22 @@ Using code to build slides solves a few problems; no need to transfer or backup 
 
 ## Pitfalls
 
-The main current concern is the need for an Internet connection to view the slides.
+1. **Internet connection**
 
-A solution can be to build the project locally on the machine that's going to be used for the presentation:
+   The main current concern is the need for an Internet connection to view the slides.
 
-```bash
-npm run build
-npm start
-```
+   A solution can be to build the project locally on the machine that's going to be used for the presentation:
 
-# Issues
+   ```bash
+   npm run build
+   npm start
+   ```
+
+1. **Customization speed**
+
+   It takes more time to customize slides via code than in a .pptx file.
+
+## Issues
 
 ## `deckTheme` is undefined in Dev mode
 
