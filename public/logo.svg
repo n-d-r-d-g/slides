@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="svg338" width="32" height="32" version="1.1" viewBox="0 0 149.429 149.481">
+    <style>
+        .elephant-path {
+            fill: #1e1e1e;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .elephant-path {
+                fill: #d8ff9d;
+            }
+        }
+   </style>
+   <path class="elephant-path" d="M47.678 91.516a2.622 2.622 0 0 0-2.131 4.246l.002.002a9.802 9.802 0 0 1 .034 12.104l-8.119 10.403a13.12 13.12 0 0 0-1.752 13.158l18.765 44.618a15.51 15.51 0 0 0 10.436 9.01l23.567 6.061a14.591 14.591 0 0 0 13.242-3.152l14.798-12.949a9.751 9.751 0 0 1 12.064-.614l4.49 3.186a10.89 10.89 0 0 1 4.173 11.854l-7.34 25.865a11.464 11.464 0 0 0 3.954 12.15l15.92 12.486a4.933 4.933 0 0 0 7.843-2.735l26.1-109.237a14.304 14.304 0 0 0-3.47-13.1l-13.665-14.597a18.436 18.436 0 0 0-12.95-5.829Zm105.597 33.4a48.883 48.883 0 0 1 4.136.182c1.21.1 1.926 1.167 1.604 2.338-.267.97-1.465 1.692-2.673 1.567-10.916-1.129-11.454-4.065-3.067-4.088z" style="fill-opacity:1;stroke:none;stroke-width:4.15428;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1" transform="translate(-34.687 -91.515)"/>
+</svg>
