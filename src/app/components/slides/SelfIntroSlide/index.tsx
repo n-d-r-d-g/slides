@@ -5,7 +5,7 @@ import { StyledQRCode } from "../../StyledQRCode";
 export function SelfIntroSlide() {
   return (
     <Slide>
-      <Heading>{"Who am I?"}</Heading>
+      <Heading className="leading-tight">{"Who am I?"}</Heading>
       <Grid gridTemplateColumns="1fr auto" gridColumnGap={16}>
         <Grid
           gridTemplateColumns="auto 1fr"

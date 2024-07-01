@@ -4,7 +4,7 @@ import { FlexBox, Grid, Heading, Slide, Text } from "spectacle";
 export function PersonalOpenSourceProjectsSlide() {
   return (
     <Slide>
-      <Heading>{"My projects"}</Heading>
+      <Heading className="leading-tight">{"My projects"}</Heading>
       <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={16}>
         <FlexBox flexDirection="column">
           <Text fontSize={40} fontWeight={900}>

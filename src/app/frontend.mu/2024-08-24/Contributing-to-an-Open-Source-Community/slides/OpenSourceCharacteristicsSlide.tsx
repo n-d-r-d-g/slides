@@ -3,9 +3,9 @@ import { Grid, Heading, ListItem, Slide, UnorderedList } from "spectacle";
 export function OpenSourceCharacteristicsSlide() {
   return (
     <Slide>
-      <Heading>{"Characteristics"}</Heading>
+      <Heading className="leading-tight">{"Characteristics"}</Heading>
       <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={16}>
-        <UnorderedList fontSize={40} className="flex flex-col">
+        <UnorderedList fontSize={40} className="flex flex-col leading-snug">
           <ListItem>
             <span className="font-black underline">{"code is public:"}</span>
             {" transparency v/s risk of being copied"}
@@ -21,7 +21,7 @@ export function OpenSourceCharacteristicsSlide() {
             {" new business v/s social awkwardness"}
           </ListItem>
         </UnorderedList>
-        <UnorderedList fontSize={40} className="flex flex-col">
+        <UnorderedList fontSize={40} className="flex flex-col leading-snug">
           <ListItem>
             <span className="font-black underline">{"self-improvement:"}</span>
             {

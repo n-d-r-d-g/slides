@@ -3,8 +3,8 @@ import { Heading, ListItem, Slide, UnorderedList } from "spectacle";
 export function OpenSourceContributionSlide() {
   return (
     <Slide>
-      <Heading>{"How to contribute"}</Heading>
-      <UnorderedList fontSize={40} className="flex flex-col">
+      <Heading className="leading-tight">{"How to contribute"}</Heading>
+      <UnorderedList fontSize={40} className="flex flex-col leading-snug">
         <ListItem>
           <span className="font-black underline">{"Code:"}</span>
           {
