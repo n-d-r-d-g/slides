@@ -35,7 +35,7 @@ export default async function Home() {
     return (
       <main className="flex min-h-screen flex-col px-4 py-12 lg:p-24 bg-inherit">
         <ThemeSwitcher className="mb-6" />
-        <h1 className="mb-6 lg:mb-8">Table of contents</h1>
+        <h1 className="mb-6 lg:mb-8">{"Table of contents"}</h1>
         <SlidesTOC nodes={tocNodes} />
       </main>
     );
