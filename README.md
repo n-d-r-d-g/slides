@@ -6,7 +6,7 @@ This project contains the slides I use for my talks.
 
 Using local presentation slides comes with its pitfalls; transfer & backup presentation files, prone to loss, not fully customizable.
 
-One alternative is proprietary cloud services like Google Slides, but the fact that it's proprietary is creates dependency on the platform.
+One alternative is proprietary cloud services like Google Slides, but the fact that it's proprietary creates dependency on the platform.
 
 Using code to build slides solves a few problems; no need to transfer or backup presentation files, source control prevents loss, fully customizable via code, no need for proprietary platforms to host slides.
 
