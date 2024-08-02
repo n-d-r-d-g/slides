@@ -5,10 +5,9 @@ import { TocNodes } from ".";
 
 type NodeProps = {
   node: TOCNode;
-  isRoot?: true;
 };
 
-export function TocNode({ node, isRoot }: NodeProps) {
+export function TocNode({ node }: NodeProps) {
   const retrieveFormattedLabel = useCallback(() => {
     let formattedLabel = node.label;
     const isDate = !!Date.parse(formattedLabel);
@@ -36,7 +35,7 @@ export function TocNode({ node, isRoot }: NodeProps) {
   return (
     <div
       className={`bg-inherit flex flex-col items-start gap-1 relative isolate before:content=[''] before:absolute before:left-[0.5ch] before:top-[3ch] before:bg-gray-300 dark:before:bg-zinc-700 before:w-px before:h-[calc(100%-3.5ch)] before:rounded-full before:z-[-1] ${
-        isRoot ? "" : "ms-5"
+        node.isRoot ? "" : "ms-5"
       }`}
     >
       {node.link ? (
