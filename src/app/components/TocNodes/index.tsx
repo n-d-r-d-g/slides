@@ -1,12 +1,12 @@
 import { TOCNode } from "@/app/utils/classes/TOCNode";
-import { Node } from "./Node";
+import { TocNode } from "./TocNode";
 
 type SlidesTOCProps = {
   nodes: Map<string, TOCNode>;
 };
 
-export function SlidesTOC({ nodes }: SlidesTOCProps) {
+export function TocNodes({ nodes }: SlidesTOCProps) {
   return [...nodes.values()].map((node) => (
-    <Node key={node.label} node={node} isRoot />
+    <TocNode key={node.label} node={node} />
   ));
 }

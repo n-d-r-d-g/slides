@@ -11,6 +11,11 @@ export function StyledQRCode({
   ref: originalRef,
   ...props
 }: StyledQRCodeProps) {
+  const { href, prependHttps, ...qrCodeProps } = props as Omit<
+    QRCodeProps,
+    "ref"
+  > &
+    WithoutHref;
   const { resolvedTheme } = useTheme();
   const [isFullScreen, setIsFullScreen] = useState(false);
   const fgColor = resolvedTheme === "light" ? "black" : "white";
@@ -35,13 +40,18 @@ export function StyledQRCode({
     [props]
   );
 
-  const retrieveHref = useCallback(() => {
-    if (props.href) return props.href;
+  const handleLinkClick = useCallback(
+    (e: MouseEvent<HTMLAnchorElement>) => e.stopPropagation(),
+    []
+  );
 
-    if ((props as WithoutHref).prependHttps) return `https://${props.value}`;
+  const retrieveHref = useCallback(() => {
+    if (href) return href;
+
+    if (prependHttps) return `https://${props.value}`;
 
     return props.value;
-  }, [props]);
+  }, [href, prependHttps, props.value]);
 
   return (
     <div
@@ -55,7 +65,7 @@ export function StyledQRCode({
       <QRCode
         fgColor={fgColor}
         bgColor={bgColor}
-        {...props}
+        {...qrCodeProps}
         size={qrCodeSize}
         className={qrCodeClassName}
         onClick={handleQRCodeClick}
@@ -64,6 +74,7 @@ export function StyledQRCode({
         href={retrieveHref()}
         target="_blank"
         rel="noopener noreferrer nofollow"
+        onClick={handleLinkClick}
         className="text-3xl text-center mt-4 no-underline hover:underline focus-visible:underline"
       >
         {props.value}

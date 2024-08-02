@@ -4,17 +4,20 @@ type TOCNodeProps = {
   label: string;
   children?: Map<string, TOCNode>;
   link?: string;
+  isRoot?: boolean;
 };
 
 export class TOCNode {
   #label: TOCNodeProps["label"];
   #children?: TOCNodeProps["children"];
   #link?: TOCNodeProps["link"];
+  #isRoot?: TOCNodeProps["isRoot"];
 
-  constructor({ label, children = new Map(), link }: TOCNodeProps) {
+  constructor({ label, children = new Map(), link, isRoot }: TOCNodeProps) {
     this.#label = label;
     this.#children = children;
     this.#link = link;
+    this.#isRoot = isRoot;
   }
 
   get label() {
@@ -27,6 +30,10 @@ export class TOCNode {
 
   get link() {
     return this.#link;
+  }
+
+  get isRoot() {
+    return this.#isRoot;
   }
 
   get hasChildren() {
@@ -43,6 +50,10 @@ export class TOCNode {
 
   set link(link: TOCNodeProps["link"]) {
     this.#link = link;
+  }
+
+  set isRoot(isRoot: TOCNodeProps["isRoot"]) {
+    this.#isRoot = isRoot;
   }
 
   addChildren(...children: Array<TOCNode>) {

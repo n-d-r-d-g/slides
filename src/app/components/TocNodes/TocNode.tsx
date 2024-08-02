@@ -1,14 +1,14 @@
 import { TOCNode } from "@/app/utils/classes/TOCNode";
-import { ChildNodes } from "./ChildNodes";
 import Link from "next/link";
 import { useCallback } from "react";
+import { TocNodes } from ".";
 
 type NodeProps = {
   node: TOCNode;
   isRoot?: true;
 };
 
-export function Node({ node, isRoot }: NodeProps) {
+export function TocNode({ node, isRoot }: NodeProps) {
   const retrieveFormattedLabel = useCallback(() => {
     let formattedLabel = node.label;
     const isDate = !!Date.parse(formattedLabel);
@@ -46,7 +46,7 @@ export function Node({ node, isRoot }: NodeProps) {
       ) : (
         <p className="bg-inherit">{retrieveFormattedLabel()}</p>
       )}
-      {node.hasChildren && <ChildNodes nodes={node.children!} />}
+      {node.hasChildren && <TocNodes nodes={node.children!} />}
     </div>
   );
 }

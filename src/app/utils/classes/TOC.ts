@@ -9,9 +9,12 @@ function addChildNodesRecursively(
   index: number,
   pathParts: Array<string>
 ) {
+  const isFirstPathPart = index === 0;
   const isLastPathPart = index === pathParts.length - 1;
 
-  if (isLastPathPart) {
+  if (isFirstPathPart) {
+    currentNode.isRoot = true;
+  } else if (isLastPathPart) {
     currentNode.link = pathParts.join("/");
     return;
   }
