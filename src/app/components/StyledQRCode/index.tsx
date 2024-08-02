@@ -64,7 +64,7 @@ export function StyledQRCode({
         href={retrieveHref()}
         target="_blank"
         rel="noopener noreferrer nofollow"
-        className="text-3xl text-center mt-4"
+        className="text-3xl text-center mt-4 no-underline hover:underline focus-visible:underline"
       >
         {props.value}
       </a>
