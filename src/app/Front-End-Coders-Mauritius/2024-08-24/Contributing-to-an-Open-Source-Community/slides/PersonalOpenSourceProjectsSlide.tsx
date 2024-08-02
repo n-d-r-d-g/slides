@@ -73,7 +73,7 @@ export function PersonalOpenSourceProjectsSlide() {
           </li>
           <li>
             {
-              "These slides have been built with code, i.e. dark mode, presenter mode, interactive"
+              "These slides have been built with code, i.e. dark mode, presenter mode, interactive, command palette"
             }
           </li>
           <li>{"Anyone knows how you say purchaser in Mauritian Creole?"}</li>
