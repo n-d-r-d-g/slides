@@ -10,13 +10,16 @@ export function PersonalOpenSourceProjectsSlide() {
           <Text fontSize={40} fontWeight={900}>
             {"MUDOCS"}
           </Text>
-          <StyledQRCode value="mu-docs.netlify.app" />
+          <StyledQRCode value="mu-docs.netlify.app" prependHttps />
         </FlexBox>
         <FlexBox flexDirection="column">
           <Text fontSize={40} fontWeight={900}>
             {"Mauritius Tax Calculator"}
           </Text>
-          <StyledQRCode value="mauritius-tax-calculator.netlify.app" />
+          <StyledQRCode
+            value="mauritius-tax-calculator.netlify.app"
+            prependHttps
+          />
         </FlexBox>
       </Grid>
       <Notes>

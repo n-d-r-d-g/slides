@@ -2,7 +2,15 @@ import { useTheme } from "next-themes";
 import { MouseEvent, useCallback, useState } from "react";
 import QRCode, { QRCodeProps } from "react-qr-code";
 
-export function StyledQRCode({ ref: originalRef, ...props }: QRCodeProps) {
+type WithoutHref = { href?: never; prependHttps?: boolean };
+type WithHref = { href?: string };
+
+type StyledQRCodeProps = QRCodeProps & (WithoutHref | WithHref);
+
+export function StyledQRCode({
+  ref: originalRef,
+  ...props
+}: StyledQRCodeProps) {
   const { resolvedTheme } = useTheme();
   const [isFullScreen, setIsFullScreen] = useState(false);
   const fgColor = resolvedTheme === "light" ? "black" : "white";
@@ -27,6 +35,14 @@ export function StyledQRCode({ ref: originalRef, ...props }: QRCodeProps) {
     [props]
   );
 
+  const retrieveHref = useCallback(() => {
+    if (props.href) return props.href;
+
+    if ((props as WithoutHref).prependHttps) return `https://${props.value}`;
+
+    return props.value;
+  }, [props]);
+
   return (
     <div
       onClick={exitFullScreen}
@@ -44,7 +60,14 @@ export function StyledQRCode({ ref: originalRef, ...props }: QRCodeProps) {
         className={qrCodeClassName}
         onClick={handleQRCodeClick}
       />
-      <p className="text-3xl text-center mt-4">{props.value}</p>
+      <a
+        href={retrieveHref()}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        className="text-3xl text-center mt-4"
+      >
+        {props.value}
+      </a>
     </div>
   );
 }

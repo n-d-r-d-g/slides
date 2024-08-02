@@ -37,8 +37,8 @@ export function SelfIntroSlide() {
           <p className="text-4xl">{"n-d-r-d-g (feel free to chat)"}</p>
         </Grid>
         <FlexBox flexDirection="column" className="gap-12">
-          <StyledQRCode value="n-d-r-d-g.com" size={160} />
-          <StyledQRCode value="github.com/n-d-r-d-g" size={160} />
+          <StyledQRCode value="n-d-r-d-g.com" size={160} prependHttps />
+          <StyledQRCode value="github.com/n-d-r-d-g" size={160} prependHttps />
         </FlexBox>
       </Grid>
     </Slide>
