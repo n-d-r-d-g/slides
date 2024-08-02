@@ -15,7 +15,7 @@ export function DeckTemplate({ slideNumber, numberOfSlides }: Props) {
     DECK_THEMES[(resolvedTheme ?? "light") as keyof typeof DECK_THEMES];
 
   return (
-    <footer className="w-full flex flex-row justify-between items-center px-8 absolute bottom-7 z-10">
+    <footer className="print:hidden w-full flex flex-row justify-between items-center px-8 absolute bottom-7 z-10">
       <Box title={"Toggle fullscreen"} className="cursor-pointer">
         <FullScreen size={20} color={deckTheme.colors.quaternary} />
       </Box>
