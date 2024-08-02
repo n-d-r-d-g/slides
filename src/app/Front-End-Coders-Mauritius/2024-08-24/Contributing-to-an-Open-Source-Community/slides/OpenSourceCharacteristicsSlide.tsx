@@ -32,7 +32,7 @@ export function OpenSourceCharacteristicsSlide() {
           <ListItem>
             <span className="font-black underline">{"self-improvement:"}</span>
             {
-              " improve technical & soft skills, patience v/s possible in private codebases"
+              " improve technical & soft skills, patience v/s possible in private communities"
             }
           </ListItem>
           <ListItem>
@@ -40,7 +40,7 @@ export function OpenSourceCharacteristicsSlide() {
               {"contributions are generally not paid:"}
             </span>
             {
-              " help keep open source projects open v/s no incentive (priorities)"
+              " help keep open source communities open v/s no incentive (priorities)"
             }
           </ListItem>
         </UnorderedList>
