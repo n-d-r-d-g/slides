@@ -31,13 +31,21 @@ export function ContributingToAnOpenSourceCommunitySlides() {
       }}
       className="leading-snug text-balance"
     >
+      {/* #1 */}
       <WelcomeSlide />
+      {/* #2 */}
       <SelfIntroSlide />
+      {/* #3 */}
       <OpenSourceDefinitionSlide />
+      {/* #4 */}
       <OpenSourceContributionSlide />
+      {/* #5 */}
       <OpenSourceCharacteristicsSlide />
+      {/* #6 */}
       <PersonalOpenSourceProjectsSlide />
+      {/* #7 */}
       <ConclusionSlide />
+      {/* #8 */}
       <QAndASlide />
     </Deck>
   );
