@@ -12,28 +12,23 @@ export function SelfIntroSlide() {
           className="place-content-start gap-6"
           style={{ placeItems: "center start" }}
         >
-          <Image src="./logo.svg" alt="n-d-r-d-g logo" width={48} height={48} />
+          <Image src="/logo.svg" alt="n-d-r-d-g logo" width={48} height={48} />
           <p className="text-4xl">{"I'm n-d-r-d-g (developer alias)"}</p>
           <Image
-            src="./code.svg"
+            src="/code.svg"
             alt="front-end developer"
             width={48}
             height={48}
           />
           <p className="text-4xl">{"Front-end web developer"}</p>
           <Image
-            src="./football-boot.svg"
+            src="/football-boot.svg"
             alt="football logo"
             width={48}
             height={48}
           />
           <p className="text-4xl">{"Footballer"}</p>
-          <Image
-            src="./discord.svg"
-            alt="discord logo"
-            width={48}
-            height={48}
-          />
+          <Image src="/discord.svg" alt="discord logo" width={48} height={48} />
           <p className="text-4xl">{"n-d-r-d-g (feel free to chat)"}</p>
         </Grid>
         <FlexBox flexDirection="column" className="gap-12">
