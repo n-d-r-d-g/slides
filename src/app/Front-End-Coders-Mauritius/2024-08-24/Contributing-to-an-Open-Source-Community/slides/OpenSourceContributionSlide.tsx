@@ -6,7 +6,7 @@ export function OpenSourceContributionSlide() {
       <Heading className="leading-tight">{"How to contribute"}</Heading>
       <UnorderedList fontSize={40} className="flex flex-col leading-snug">
         <ListItem>
-          <span className="font-black underline">{"Code:"}</span>
+          <span className="font-black underline">{"Codebase:"}</span>
           {
             " create issues, create/review PRs, answer questions from other devs (online: Github, Discord, StackOverflow or elsewhere; in-person: events like meetups)"
           }

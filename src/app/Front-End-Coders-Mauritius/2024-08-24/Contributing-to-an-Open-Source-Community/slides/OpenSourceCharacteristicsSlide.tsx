@@ -1,4 +1,11 @@
-import { Grid, Heading, ListItem, Slide, UnorderedList } from "spectacle";
+import {
+  Grid,
+  Heading,
+  ListItem,
+  Notes,
+  Slide,
+  UnorderedList,
+} from "spectacle";
 
 export function OpenSourceCharacteristicsSlide() {
   return (
@@ -38,6 +45,11 @@ export function OpenSourceCharacteristicsSlide() {
           </ListItem>
         </UnorderedList>
       </Grid>
+      <Notes>
+        <ul className="list-disc list-inside flex flex-col gap-2">
+          <li>{"Not pros & cons!"}</li>
+        </ul>
+      </Notes>
     </Slide>
   );
 }
