@@ -1,5 +1,6 @@
 import { useTheme } from "next-themes";
 import { MouseEvent, useCallback, useState } from "react";
+import { MdClose } from "react-icons/md";
 import QRCode, { QRCodeProps } from "react-qr-code";
 
 type WithoutHref = { href?: never; prependHttps?: boolean };
@@ -62,6 +63,15 @@ export function StyledQRCode({
           : ""
       }`}
     >
+      {isFullScreen && (
+        <button
+          type="button"
+          title={"Close"}
+          className="absolute top-4 right-4 p-4 rounded-full hover:bg-slate-400 hover:bg-opacity-10 "
+        >
+          <MdClose size={20} />
+        </button>
+      )}
       <QRCode
         fgColor={fgColor}
         bgColor={bgColor}
