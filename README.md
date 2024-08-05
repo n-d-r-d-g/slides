@@ -32,3 +32,10 @@ Using code to build slides solves a few problems; no need to transfer or backup 
 ## `deckTheme` is undefined in Dev mode
 
 Sometimes, Spectacle does not get loaded properly on cold start. Modify the URL in your browser's address bar so that it points to the homepage, e.g. localhost:3000, then press `Enter`.
+
+## Contribution
+
+- Fork the repository to get your copy on your account.
+- Clone your forked repository on your machine.
+- Run `npm i` in your terminal.
+- Run `npm run dev` to start the project.
