@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
 import { MouseEvent, useCallback, useState } from "react";
-import { MdClose } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
 import QRCode, { QRCodeProps } from "react-qr-code";
 
 type WithoutHref = { href?: never; prependHttps?: boolean };
@@ -69,7 +69,7 @@ export function StyledQRCode({
           title={"Close"}
           className="absolute top-4 right-4 p-4 rounded-full hover:bg-slate-400 hover:bg-opacity-10 "
         >
-          <MdClose size={20} />
+          <IoClose size={20} />
         </button>
       )}
       <QRCode
