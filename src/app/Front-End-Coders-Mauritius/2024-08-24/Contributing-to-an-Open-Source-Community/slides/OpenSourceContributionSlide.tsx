@@ -8,7 +8,7 @@ export function OpenSourceContributionSlide() {
         <ListItem>
           <span className="font-black underline">{"Codebase:"}</span>
           {
-            " create issues, create/review PRs, answer questions from other devs (online: Github, Discord, StackOverflow or elsewhere; in-person: events like meetups)"
+            " create issues, create/review PRs, give a star, answer questions from other devs (online: Github, Discord, StackOverflow or elsewhere; in-person: events like meetups)"
           }
         </ListItem>
         <ListItem>
