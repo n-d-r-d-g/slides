@@ -12,6 +12,7 @@ export function ConclusionSlide() {
       <Notes>
         <ul className="list-disc list-inside flex flex-col gap-5">
           <li>{"Find your own way to contribute"}</li>
+          <li>{"No need to be an expert to contribute"}</li>
         </ul>
       </Notes>
     </Slide>
