@@ -48,3 +48,16 @@ export const DECK_THEMES = {
     },
   },
 };
+export const NO_DECK_TRANSITION = {
+  from: {
+    transform: "translateX(0)",
+  },
+  enter: {
+    transform: "translateX(0)",
+  },
+  leave: {
+    transform: "translateX(0)",
+  },
+};
+export const ANIMATION_MODES = ["on", "off", "system"] as const;
+export const ANIMATION_MODE_STORAGE_KEY = "animationMode";

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
+import { AnimationModeProvider } from "./context/AnimationMode";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={inter.className}>
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+        <AnimationModeProvider>
+          <ThemeProvider attribute="class">{children}</ThemeProvider>
+        </AnimationModeProvider>
       </body>
     </html>
   );
