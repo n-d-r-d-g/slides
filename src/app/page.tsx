@@ -18,7 +18,7 @@ function retrieveTOCNodes() {
 
   tocFilePaths.forEach((filePath) => {
     const filePathWithoutPageEnding = (filePath as string).replace(
-      `/${PAGE_PATH_ENDING}`,
+      `${process.env.OS_SPECIFIC_PATH_SEPARATOR ?? "/"}${PAGE_PATH_ENDING}`,
       ""
     );
 
