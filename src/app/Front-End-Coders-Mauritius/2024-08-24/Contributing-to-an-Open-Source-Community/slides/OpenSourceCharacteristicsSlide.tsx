@@ -1,70 +1,85 @@
-import {
-  Grid,
-  Heading,
-  ListItem,
-  Notes,
-  Slide,
-  UnorderedList,
-} from "spectacle";
+import { Heading, Notes, Slide } from "spectacle";
 
 export function OpenSourceCharacteristicsSlide() {
   return (
-    <Slide>
+    <Slide className="w-full h-full max-w-full max-h-full flex flex-col [&>div]:w-full [&>div]:h-full">
       <Heading className="leading-tight">{"Characteristics"}</Heading>
-      <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={16}>
-        <UnorderedList fontSize={30} className="flex flex-col leading-snug">
-          <ListItem className="flex flex-col">
-            <span className="font-black underline text-[40px]">
-              {"Code is public:"}
-            </span>
-            <span>{"transparency v/s risk of being copied"}</span>
-          </ListItem>
-          <ListItem className="flex flex-col">
-            <span className="font-black underline text-[40px]">
-              {"Contributions are public:"}
-            </span>
-            <span>{"increased visibility v/s mistakes are also visible"}</span>
-          </ListItem>
-          <ListItem className="flex flex-col">
-            <span className="font-black underline text-[40px]">
-              {"Self-improvement:"}
-            </span>
-            <span>
-              {
-                "improve technical & soft skills, patience v/s possible in private communities"
-              }
-            </span>
-          </ListItem>
-        </UnorderedList>
-        <UnorderedList fontSize={30} className="flex flex-col leading-snug">
-          <ListItem className="flex flex-col">
-            <span className="font-black underline text-[40px]">
-              {"Networking:"}
-            </span>
-            <span>{"new business v/s social awkwardness"}</span>
-          </ListItem>
-          <ListItem className="flex flex-col">
-            <span className="font-black underline text-[40px]">
-              {"Contributions are generally not paid:"}
-            </span>
-            <span>
-              {
-                "help keep open source communities open v/s no incentive (priorities)"
-              }
-            </span>
-          </ListItem>
-          <ListItem className="flex flex-col">
-            <span className="font-black underline text-[40px]">
-              {"More leverage:"}
-            </span>
-            <span>{"higher pay v/s more tricky questions"}</span>
-          </ListItem>
-        </UnorderedList>
-      </Grid>
+      <ol className="list-decimal list-inside min-h-0 grow flex flex-col flex-wrap gap-x-4 gap-y-10 leading-tight">
+        <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
+          <span className="underline">{"Code is public:"}</span>
+          <span className="block mt-2 font-normal text-[32px]">
+            {"transparency v/s risk of being copied"}
+          </span>
+        </li>
+        <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
+          <span className="underline">{"Contributions are public:"}</span>
+          <span className="block mt-2 font-normal text-[32px]">
+            {"increased visibility v/s mistakes are also visible"}
+          </span>
+        </li>
+        <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
+          <span className="underline">{"Self-improvement:"}</span>
+          <span className="block mt-2 font-normal text-[32px]">
+            {
+              "improve technical & soft skills, patience v/s possible in private communities"
+            }
+          </span>
+        </li>
+        <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
+          <span className="underline">{"Networking:"}</span>
+          <span className="block mt-2 font-normal text-[32px]">
+            {"new business v/s social awkwardness"}
+          </span>
+        </li>
+        <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
+          <span className="underline">
+            {"Contributions are generally not paid:"}
+          </span>
+          <span className="block mt-2 font-normal text-[32px]">
+            {
+              "help keep open source communities open v/s no incentive (priorities)"
+            }
+          </span>
+        </li>
+        <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
+          <span className="underline">{"More leverage:"}</span>
+          <span className="block mt-2 font-normal text-[32px]">
+            {"higher pay v/s more tricky questions"}
+          </span>
+        </li>
+      </ol>
       <Notes>
-        <ul className="list-disc list-inside flex flex-col gap-2">
-          <li>{"Not pros & cons!"}</li>
-        </ul>
+        <em className="inline-block mb-2 font-bold before:content-['#'] before:inline-block before:me-[0.75ch]">
+          {"Not pros & cons! Just characteristics to reflect on."}
+        </em>
+        <ol className="list-decimal list-inside flex flex-col gap-4">
+          <li>
+            {
+              "Anyone can see the quality of your work. Your code can also be copied by anyone and used in their codebase."
+            }
+          </li>
+          <li>
+            {
+              "Potential clients & agencies can view your code, way of communicating with others... but also your mistakes."
+            }
+          </li>
+          <li>
+            {
+              "In private communities, e.g an organization, you sometimes don't have the freedom to try new things on the job, therefore, there's an added stress. But this does not happen everywhere."
+            }
+          </li>
+          <li>
+            {
+              "Increased visibility to new clients and recruiters. But you're also exposed to new people, which can be an issue for you if you're an introvert."
+            }
+          </li>
+          <li>{"You may or may not have the time to contribute."}</li>
+          <li>
+            {
+              "helps with negotiating on expertise & experience instead of years of service"
+            }
+          </li>
+        </ol>
       </Notes>
     </Slide>
   );
