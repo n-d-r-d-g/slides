@@ -8,27 +8,33 @@ export function OpenSourceCharacteristicsSlide() {
         <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
           <span className="underline">{"Code is public:"}</span>
           <span className="block mt-2 font-normal text-[32px]">
-            {"transparency v/s risk of being copied"}
+            {"transparency"}
+            <span className="whitespace-nowrap hyphens-none">{" v/s "}</span>
+            {"risk of being copied"}
           </span>
         </li>
         <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
           <span className="underline">{"Contributions are public:"}</span>
           <span className="block mt-2 font-normal text-[32px]">
-            {"increased visibility v/s mistakes are also visible"}
+            {"increased visibility"}
+            <span className="whitespace-nowrap hyphens-none">{" v/s "}</span>
+            {"mistakes are also visible"}
           </span>
         </li>
         <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
           <span className="underline">{"Self-improvement:"}</span>
           <span className="block mt-2 font-normal text-[32px]">
-            {
-              "improve technical & soft skills, patience v/s possible in private communities"
-            }
+            {"improve technical & soft skills, patience"}
+            <span className="whitespace-nowrap hyphens-none">{" v/s "}</span>
+            {"possible in private communities"}
           </span>
         </li>
         <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
           <span className="underline">{"Networking:"}</span>
           <span className="block mt-2 font-normal text-[32px]">
-            {"new business v/s social awkwardness"}
+            {"new business"}
+            <span className="whitespace-nowrap hyphens-none">{" v/s "}</span>
+            {"social awkwardness"}
           </span>
         </li>
         <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
@@ -36,23 +42,25 @@ export function OpenSourceCharacteristicsSlide() {
             {"Contributions are generally not paid:"}
           </span>
           <span className="block mt-2 font-normal text-[32px]">
-            {
-              "help keep open source communities open v/s no incentive (priorities)"
-            }
+            {"help keep open source communities open"}
+            {" v/s "}
+            {"no incentive (priorities)"}
           </span>
         </li>
         <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
           <span className="underline">{"More leverage:"}</span>
           <span className="block mt-2 font-normal text-[32px]">
-            {"higher pay v/s more tricky questions"}
+            {"higher pay"}
+            {" v/s "}
+            {"more tricky questions"}
           </span>
         </li>
       </ol>
       <Notes>
-        <em className="inline-block mb-2 font-bold before:content-['#'] before:inline-block before:me-[0.75ch]">
+        <em className="inline-block mb-5 font-bold before:content-['#'] before:inline-block before:me-[0.75ch]">
           {"Not pros & cons! Just characteristics to reflect on."}
         </em>
-        <ol className="list-decimal list-inside flex flex-col gap-4">
+        <ol className="list-decimal list-inside flex flex-col gap-5">
           <li>
             {
               "Anyone can see the quality of your work. Your code can also be copied by anyone and used in their codebase."
@@ -60,7 +68,7 @@ export function OpenSourceCharacteristicsSlide() {
           </li>
           <li>
             {
-              "Potential clients & agencies can view your code, way of communicating with others... but also your mistakes."
+              "Potential clients & agencies can view your code, how you communicate with others... but also your mistakes."
             }
           </li>
           <li>
@@ -70,7 +78,7 @@ export function OpenSourceCharacteristicsSlide() {
           </li>
           <li>
             {
-              "Increased visibility to new clients and recruiters. But you're also exposed to new people, which can be an issue for you if you're an introvert."
+              "Increased visibility to new clients and recruiters. But you're also exposed to new people, which can be an issue for you if you're introverted."
             }
           </li>
           <li>{"You may or may not have the time to contribute."}</li>

@@ -12,10 +12,15 @@ export function WelcomeSlide() {
         prependHttps
       />
       <Notes>
-        <ol className="list-decimal list-inside flex flex-col gap-2">
+        <ul className="list-disc list-inside flex flex-col gap-2">
           <li>{"Brief intro on the topic."}</li>
           <li>{"Enlarge any QR codes throughout the presentation."}</li>
-        </ol>
+          <li>
+            {
+              "Feel free to interrupt me during the presentation to ask questions."
+            }
+          </li>
+        </ul>
       </Notes>
     </Slide>
   );

@@ -12,6 +12,7 @@ import { DECK_THEMES, NO_DECK_TRANSITION } from "../../../../constants";
 import { ConclusionSlide } from "./ConclusionSlide";
 import { OpenSourceCharacteristicsSlide } from "./OpenSourceCharacteristicsSlide";
 import { OpenSourceContributionSlide } from "./OpenSourceContributionSlide";
+import { OpenSourceContributionsSlide } from "./OpenSourceContributionsSlide";
 import { OpenSourceDefinitionSlide } from "./OpenSourceDefinitionSlide";
 import { PersonalOpenSourceProjectsSlide } from "./PersonalOpenSourceProjectsSlide";
 import { WelcomeSlide } from "./WelcomeSlide";
@@ -59,8 +60,10 @@ export function ContributingToAnOpenSourceCommunitySlides() {
       {/* #6 */}
       <PersonalOpenSourceProjectsSlide />
       {/* #7 */}
-      <ConclusionSlide />
+      <OpenSourceContributionsSlide />
       {/* #8 */}
+      <ConclusionSlide />
+      {/* #9 */}
       <QAndASlide />
     </Deck>
   );
