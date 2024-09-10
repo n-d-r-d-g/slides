@@ -29,7 +29,7 @@ export function PersonalOpenSourceProjectsSlide() {
             <ul className="list-disc list-inside ps-6">
               <li>
                 {
-                  "The problems I faced (mauritian terms, multiple entities, links to official "
+                  "The problems I faced (mauritian terms - papie gaz, deklarasyon, fitness; multiple entities - nlta, registrar, insurance; links to official "
                 }
                 <a
                   href="https://nlta.govmu.org/Documents/Downloads/Download%20Forms/deed-sale.pdf"
@@ -71,12 +71,17 @@ export function PersonalOpenSourceProjectsSlide() {
               <li>{"Upcoming instructions: fitness, MVL (deklarasyon)"}</li>
             </ul>
           </li>
+          <li>{"Anyone knows how you say purchaser in Mauritian Creole?"}</li>
+          <li>
+            {
+              "I built a few other projects. You can check them out on my GitHub account."
+            }
+          </li>
           <li>
             {
               "These slides have been built with code, i.e. dark mode, presenter mode, interactive, command palette"
             }
           </li>
-          <li>{"Anyone knows how you say purchaser in Mauritian Creole?"}</li>
           <li>{"Anyone can contribute!"}</li>
         </ol>
       </Notes>

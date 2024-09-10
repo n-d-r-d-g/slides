@@ -1,8 +1,9 @@
 import { readdirSync } from "node:fs";
+import { AnimationModeSwitcher } from "./components/AnimationModeSwitcher";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import { TocNodes } from "./components/TocNodes";
 import { PAGE_PATH_ENDING } from "./constants";
 import { TOC } from "./utils/classes/TOC";
-import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 function retrieveTOCNodes() {
   const appFilePaths = readdirSync("./src/app", { recursive: true });
@@ -17,7 +18,7 @@ function retrieveTOCNodes() {
 
   tocFilePaths.forEach((filePath) => {
     const filePathWithoutPageEnding = (filePath as string).replace(
-      `/${PAGE_PATH_ENDING}`,
+      `${process.env.OS_SPECIFIC_PATH_SEPARATOR ?? "/"}${PAGE_PATH_ENDING}`,
       ""
     );
 
@@ -34,7 +35,8 @@ export default async function Home() {
 
     return (
       <main className="flex min-h-screen flex-col px-4 py-12 lg:p-24 bg-inherit">
-        <ThemeSwitcher className="mb-6" />
+        <ThemeSwitcher className="mb-2" />
+        <AnimationModeSwitcher className="mb-6" />
         <h1 className="mb-6 lg:mb-8">{"Table of contents"}</h1>
         <TocNodes nodes={tocNodes} />
       </main>

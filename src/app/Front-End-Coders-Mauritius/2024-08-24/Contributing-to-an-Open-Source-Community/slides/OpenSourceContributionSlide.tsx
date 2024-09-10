@@ -1,4 +1,4 @@
-import { Heading, ListItem, Slide, UnorderedList } from "spectacle";
+import { Heading, ListItem, Notes, Slide, UnorderedList } from "spectacle";
 
 export function OpenSourceContributionSlide() {
   return (
@@ -6,9 +6,9 @@ export function OpenSourceContributionSlide() {
       <Heading className="leading-tight">{"How to contribute"}</Heading>
       <UnorderedList fontSize={40} className="flex flex-col leading-snug">
         <ListItem>
-          <span className="font-black underline">{"Codebase:"}</span>
+          <span className="font-black underline">{"Code-related:"}</span>
           {
-            " create issues, create/review PRs, answer questions from other devs (online: Github, Discord, StackOverflow or elsewhere; in-person: events like meetups)"
+            " create issues, create/review PRs, give a star, answer questions from other devs (online: Github, Discord, StackOverflow or elsewhere; in-person: events like meetups)"
           }
         </ListItem>
         <ListItem>
@@ -19,9 +19,14 @@ export function OpenSourceContributionSlide() {
         </ListItem>
         <ListItem>
           <span className="font-black underline">{"Educational content:"}</span>
-          {" create lessons/courses"}
+          {" create lessons/courses, bootcamps"}
         </ListItem>
       </UnorderedList>
+      <Notes>
+        <ul className="list-disc list-inside">
+          <li>No need to be a developer or an expert to contribute</li>
+        </ul>
+      </Notes>
     </Slide>
   );
 }

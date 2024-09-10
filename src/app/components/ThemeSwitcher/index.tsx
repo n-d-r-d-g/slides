@@ -29,7 +29,7 @@ export function ThemeSwitcher({ className = "" }: Props) {
     <aside
       className={`w-full flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-sm ${className}`}
     >
-      <p className="font-medium">Choose theme:</p>
+      <p className="font-medium">Theme:</p>
       <div className="flex flex-row items-center gap-1">
         {COLOR_THEMES.map((theme) => (
           <button

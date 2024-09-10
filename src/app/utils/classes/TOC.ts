@@ -53,7 +53,7 @@ export class TOC {
   }
 
   addNodeByFilePath(path: string) {
-    const pathParts = path.split("/");
+    const pathParts = path.split(process.env.OS_SPECIFIC_PATH_SEPARATOR ?? "/");
 
     if (pathParts.length === 0) return;
 
