@@ -13,7 +13,10 @@ export function SelfIntroSlide() {
           style={{ placeItems: "center start" }}
         >
           <Image src="/logo.svg" alt="n-d-r-d-g logo" width={48} height={48} />
-          <p className="text-4xl">{"I'm n-d-r-d-g (developer alias)"}</p>
+          <p className="text-4xl">
+            {"I'm n-d-r-d-g"}{" "}
+            <span className="italic">{'(pronounced "underdog")'}</span>
+          </p>
           <Image
             src="/code.svg"
             alt="front-end developer"
