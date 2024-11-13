@@ -36,14 +36,7 @@ export function JavaScriptAndTypeScriptTipsSlides() {
   return (
     <Deck
       theme={deckTheme}
-      template={({ slideNumber, numberOfSlides }) => {
-        return (
-          <DeckTemplate
-            slideNumber={slideNumber}
-            numberOfSlides={numberOfSlides}
-          />
-        );
-      }}
+      template={DeckTemplate}
       transition={deckTransition()}
       className="leading-snug text-balance"
     >
@@ -51,6 +44,12 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       <WelcomeSlide />
       {/* #2 */}
       <SelfIntroSlide />
+      {/*TODO: JS - destructuring array elements by index */}
+      {/*TODO: JS - compound fields concatenation */}
+      {/*TODO: JS - Object getters & setters */}
+      {/*TODO: TS - ReturnType */}
+      {/*TODO: TS - Array[number]["property"] */}
+      {/*TODO: TS - satisfies */}
       {/* #3 */}
       {/* <OpenSourceDefinitionSlide /> */}
       {/* #4 */}

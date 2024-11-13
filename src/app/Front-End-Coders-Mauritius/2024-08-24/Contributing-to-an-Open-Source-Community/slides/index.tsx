@@ -36,14 +36,7 @@ export function ContributingToAnOpenSourceCommunitySlides() {
   return (
     <Deck
       theme={deckTheme}
-      template={({ slideNumber, numberOfSlides }) => {
-        return (
-          <DeckTemplate
-            slideNumber={slideNumber}
-            numberOfSlides={numberOfSlides}
-          />
-        );
-      }}
+      template={DeckTemplate}
       transition={deckTransition()}
       className="leading-snug text-balance"
     >
