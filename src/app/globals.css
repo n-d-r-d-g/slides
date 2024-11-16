@@ -63,6 +63,18 @@
       }
     }
   }
+
+  .shiki {
+    counter-reset: step;
+    counter-increment: step 0;
+
+    .line {
+      &::before {
+        counter-increment: step;
+        @apply mr-[1ch] inline-block border-transparent text-right text-neutral-600 dark:text-neutral-400 content-[counter(step)];
+      }
+    }
+  }
 }
 
 @layer utilities {

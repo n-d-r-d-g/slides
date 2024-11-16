@@ -1,15 +1,19 @@
 "use client";
 
-import { DECK_THEMES } from "../../constants";
 import { useTheme } from "next-themes";
+import { ReactNode } from "react";
 import { Box, FullScreen } from "spectacle";
+import { DECK_THEMES } from "../../constants";
 
 type Props = {
   slideNumber: number;
   numberOfSlides: number;
 };
 
-export function DeckTemplate({ slideNumber, numberOfSlides }: Props) {
+export function DeckTemplate({
+  slideNumber,
+  numberOfSlides,
+}: Props): ReactNode {
   const { resolvedTheme } = useTheme();
   const deckTheme =
     DECK_THEMES[(resolvedTheme ?? "light") as keyof typeof DECK_THEMES];

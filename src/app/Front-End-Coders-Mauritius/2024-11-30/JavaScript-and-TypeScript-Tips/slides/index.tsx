@@ -15,6 +15,7 @@ import { DECK_THEMES, NO_DECK_TRANSITION } from "../../../../constants";
 // import { OpenSourceContributionsSlide } from "./OpenSourceContributionsSlide";
 // import { OpenSourceDefinitionSlide } from "./OpenSourceDefinitionSlide";
 // import { PersonalOpenSourceProjectsSlide } from "./PersonalOpenSourceProjectsSlide";
+import { ArrayDestructuringByIndex } from "./ArrayDestructuringByIndex";
 import { WelcomeSlide } from "./WelcomeSlide";
 
 export function JavaScriptAndTypeScriptTipsSlides() {
@@ -51,7 +52,7 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       {/*TODO: TS - Array[number]["property"] */}
       {/*TODO: TS - satisfies */}
       {/* #3 */}
-      {/* <OpenSourceDefinitionSlide /> */}
+      <ArrayDestructuringByIndex />
       {/* #4 */}
       {/* <OpenSourceContributionSlide /> */}
       {/* #5 */}
