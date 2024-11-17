@@ -7,7 +7,7 @@ export function SelfIntroSlide() {
   return (
     <Slide>
       <Heading>{"Who am I?"}</Heading>
-      <div className="grid grid-cols-[1fr_auto] gap-4">
+      <div className="grid grid-cols-[1fr_auto] gap-4 px-8">
         <div className="grid grid-cols-[auto_1fr] place-content-start place-items-[center_start] gap-6">
           <Image src="/logo.svg" alt="n-d-r-d-g logo" width={48} height={48} />
           <p className="text-4xl">

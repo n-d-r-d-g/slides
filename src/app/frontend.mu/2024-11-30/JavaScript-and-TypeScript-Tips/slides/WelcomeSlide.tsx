@@ -7,8 +7,9 @@ export function WelcomeSlide() {
     <Slide>
       <Heading>{"JavaScript & TypeScript Tips"}</Heading>
       <StyledQRCode
-        value={`${process.env.NEXT_PUBLIC_SLIDES_APP_URL}Front-End-Coders-Mauritius/2024-11-30/JavaScript-and-TypeScript-Tips`}
+        value={`${process.env.NEXT_PUBLIC_SLIDES_APP_URL}frontend.mu/2024-11-30/JavaScript-and-TypeScript-Tips`}
         prependHttps={process.env.NODE_ENV !== "development"}
+        className="mt-10"
       />
       <Notes>
         <ul className="list-disc list-inside flex flex-col gap-2">

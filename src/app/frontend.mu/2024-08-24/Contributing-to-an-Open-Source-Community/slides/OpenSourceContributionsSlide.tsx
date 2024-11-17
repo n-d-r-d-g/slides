@@ -5,7 +5,7 @@ export function OpenSourceContributionsSlide() {
   return (
     <Slide>
       <Heading>{"My Contributions"}</Heading>
-      <ul className="list-disc list-inside flex flex-col gap-5">
+      <ul className="list-disc list-inside flex flex-col gap-5 px-8">
         <li className="text-[40px] leading-snug">
           {"DevCon 2024 (DevConMU Scheduler)"}
         </li>
