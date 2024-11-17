@@ -1,9 +1,10 @@
-import { Heading, Slide } from "spectacle";
+import { Heading } from "@/app/components/Heading";
+import { Slide } from "spectacle";
 
 export function OpenSourceContributionsSlide() {
   return (
     <Slide>
-      <Heading className="leading-tight">{"My Contributions"}</Heading>
+      <Heading>{"My Contributions"}</Heading>
       <ul className="list-disc list-inside flex flex-col gap-5">
         <li className="text-[40px] leading-snug">
           {"DevCon 2024 (DevConMU Scheduler)"}

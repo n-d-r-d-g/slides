@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 import { useCallback } from "react";
 import { Deck } from "spectacle";
 import { SelfIntroSlide } from "../../../../components/slides/SelfIntroSlide";
-import { DECK_THEMES, NO_DECK_TRANSITION } from "../../../../constants";
+import { DECK_THEMES, NO_DECK_TRANSITION } from "../../../../utils/constants";
 import { ConclusionSlide } from "./ConclusionSlide";
 import { OpenSourceCharacteristicsSlide } from "./OpenSourceCharacteristicsSlide";
 import { OpenSourceContributionSlide } from "./OpenSourceContributionSlide";

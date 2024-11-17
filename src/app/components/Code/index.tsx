@@ -42,11 +42,7 @@ function CopyToClipboard({ code }: { code: string }) {
   );
 }
 
-export default function Code({
-  lang = "javascript",
-  filename,
-  children,
-}: Props) {
+export function Code({ lang = "javascript", filename, children }: Props) {
   const { resolvedTheme } = useTheme();
   const [htmlCode, setHTMLCode] = useState("");
   const [fontSize, setFontSize] = useState(28);
@@ -155,7 +151,9 @@ export default function Code({
         <textarea
           defaultValue={strCode.current}
           onChange={handleCodeChange}
-          className="leading-loose font-mono resize"
+          rows={4}
+          cols={60}
+          className="leading-loose font-mono resize px-4"
           style={{ fontSize }}
         ></textarea>
       )}

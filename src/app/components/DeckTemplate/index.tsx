@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import { ReactNode } from "react";
 import { Box, FullScreen } from "spectacle";
-import { DECK_THEMES } from "../../constants";
+import { DECK_THEMES } from "../../utils/constants";
 
 type Props = {
   slideNumber: number;

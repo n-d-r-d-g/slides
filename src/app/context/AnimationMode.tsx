@@ -8,7 +8,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import { ANIMATION_MODE_STORAGE_KEY } from "../constants";
+import { ANIMATION_MODE_STORAGE_KEY } from "../utils/constants";
 import { AnimationMode } from "../types";
 
 type TAnimationModeContext = {

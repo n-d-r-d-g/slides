@@ -1,12 +1,11 @@
-import Code from "@/app/components/Code";
-import { Heading, Notes, Slide } from "spectacle";
+import { Code } from "@/app/components/Code";
+import { Heading } from "@/app/components/Heading";
+import { Notes, Slide } from "spectacle";
 
 export function ArrayDestructuringByIndex() {
   return (
     <Slide className="w-full h-full max-w-full max-h-full flex flex-col [&>div]:w-full [&>div]:h-full">
-      <Heading className="leading-tight">
-        {"Array destructuring by index"}
-      </Heading>
+      <Heading>{"Array destructuring by index"}</Heading>
       <div className="max-w-full h-96 mx-auto">
         <Code lang="javascript">
           {`const roles = ["ADMIN", "SUPERUSER", "USER"];` +

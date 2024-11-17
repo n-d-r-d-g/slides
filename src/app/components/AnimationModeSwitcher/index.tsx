@@ -3,7 +3,7 @@
 import { useAnimationMode } from "@/app/context/AnimationMode";
 import { AnimationMode } from "@/app/types";
 import { useCallback } from "react";
-import { ANIMATION_MODES } from "../../constants";
+import { ANIMATION_MODES } from "../../utils/constants";
 
 type Props = {
   className?: string;

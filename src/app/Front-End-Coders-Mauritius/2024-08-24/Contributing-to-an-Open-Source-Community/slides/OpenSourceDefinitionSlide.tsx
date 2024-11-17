@@ -1,43 +1,30 @@
-import {
-  Heading,
-  Slide,
-  Table,
-  TableBody,
-  TableCell,
-  TableHeader,
-  TableRow,
-} from "spectacle";
+import { Heading } from "@/app/components/Heading";
+import { Slide } from "spectacle";
 
 export function OpenSourceDefinitionSlide() {
   return (
     <Slide>
-      <Heading className="leading-tight">{"What's open source?"}</Heading>
-      <Table className="!w-fit mx-auto mt-28">
-        <TableHeader>
-          <TableRow className="leading-tight">
-            <TableCell
-              className="!text-center rounded-t-3xl rounded-b-lg bg-zinc-200 dark:bg-zinc-900"
-              fontSize={32}
-            >
+      <Heading>{"What's open source?"}</Heading>
+      <table className="!w-fit mx-auto mt-28">
+        <thead>
+          <tr className="leading-tight">
+            <td className="!text-center font-bold rounded-t-3xl rounded-b-lg text-[2rem] bg-zinc-200 dark:bg-zinc-900">
               {"Open"}
-            </TableCell>
-            <TableCell>{""}</TableCell>
-            <TableCell
-              className="!text-center rounded-t-3xl rounded-b-lg bg-zinc-200 dark:bg-zinc-900"
-              fontSize={32}
-            >
+            </td>
+            <td>{""}</td>
+            <td className="!text-center font-bold rounded-t-3xl rounded-b-lg text-[2rem] bg-zinc-200 dark:bg-zinc-900">
               {"Source"}
-            </TableCell>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          <TableRow className="leading-tight">
-            <TableCell>{"everyone has access"}</TableCell>
-            <TableCell className="px-20 !text-3xl italic">{"to the"}</TableCell>
-            <TableCell>{"source code"}</TableCell>
-          </TableRow>
-        </TableBody>
-      </Table>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="leading-tight">
+            <td className="text-[2.75rem]">{"everyone has access"}</td>
+            <td className="px-20 !text-3xl italic">{"to the"}</td>
+            <td className="text-[2.75rem]">{"source code"}</td>
+          </tr>
+        </tbody>
+      </table>
     </Slide>
   );
 }

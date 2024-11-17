@@ -1,9 +1,10 @@
-import { Heading, Notes, Slide } from "spectacle";
+import { Heading } from "@/app/components/Heading";
+import { Notes, Slide } from "spectacle";
 
 export function OpenSourceCharacteristicsSlide() {
   return (
     <Slide className="w-full h-full max-w-full max-h-full flex flex-col [&>div]:w-full [&>div]:h-full">
-      <Heading className="leading-tight">{"Characteristics"}</Heading>
+      <Heading>{"Characteristics"}</Heading>
       <ol className="list-decimal list-inside min-h-0 grow flex flex-col flex-wrap gap-x-4 gap-y-10 leading-tight">
         <li className="max-w-[calc(50%-16px)] font-extrabold text-[40px]">
           <span className="underline">{"Code is public:"}</span>

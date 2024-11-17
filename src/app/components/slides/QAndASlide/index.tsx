@@ -1,11 +1,12 @@
-import { FlexBox, Heading, Slide } from "spectacle";
+import { Slide } from "spectacle";
+import { Heading } from "../../Heading";
 
 export function QAndASlide() {
   return (
     <Slide>
-      <FlexBox height="100%">
-        <Heading className="leading-tight">{"Questions/Remarks?"}</Heading>
-      </FlexBox>
+      <div className="h-100 grid place-content-center my-auto">
+        <Heading>{"Questions/Remarks?"}</Heading>
+      </div>
     </Slide>
   );
 }

@@ -1,12 +1,11 @@
+import { Heading } from "@/app/components/Heading";
 import { StyledQRCode } from "@/app/components/StyledQRCode";
-import { Heading, Notes, Slide } from "spectacle";
+import { Notes, Slide } from "spectacle";
 
 export function WelcomeSlide() {
   return (
     <Slide>
-      <Heading className="leading-tight">
-        {"Contributing to an Open Source Community"}
-      </Heading>
+      <Heading>{"Contributing to an Open Source Community"}</Heading>
       <StyledQRCode
         value={`${process.env.NEXT_PUBLIC_SLIDES_APP_URL}Front-End-Coders-Mauritius/2024-08-24/Contributing-to-an-Open-Source-Community`}
         prependHttps={process.env.NODE_ENV !== "development"}

@@ -1,12 +1,11 @@
+import { Heading } from "@/app/components/Heading";
 import { StyledQRCode } from "@/app/components/StyledQRCode";
-import { Heading, Notes, Slide } from "spectacle";
+import { Notes, Slide } from "spectacle";
 
 export function WelcomeSlide() {
   return (
     <Slide>
-      <Heading className="leading-tight">
-        {"JavaScript & TypeScript Tips"}
-      </Heading>
+      <Heading>{"JavaScript & TypeScript Tips"}</Heading>
       <StyledQRCode
         value={`${process.env.NEXT_PUBLIC_SLIDES_APP_URL}Front-End-Coders-Mauritius/2024-11-30/JavaScript-and-TypeScript-Tips`}
         prependHttps={process.env.NODE_ENV !== "development"}

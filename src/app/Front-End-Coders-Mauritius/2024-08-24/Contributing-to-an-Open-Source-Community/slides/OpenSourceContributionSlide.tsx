@@ -1,27 +1,28 @@
-import { Heading, ListItem, Notes, Slide, UnorderedList } from "spectacle";
+import { Heading } from "@/app/components/Heading";
+import { Notes, Slide } from "spectacle";
 
 export function OpenSourceContributionSlide() {
   return (
     <Slide>
-      <Heading className="leading-tight">{"How to contribute"}</Heading>
-      <UnorderedList fontSize={40} className="flex flex-col leading-snug">
-        <ListItem>
-          <span className="font-black underline">{"Code-related:"}</span>
+      <Heading>{"How to contribute"}</Heading>
+      <ul className="flex flex-col gap-8 text-[2.5rem] leading-snug p-8">
+        <li>
+          <span className="font-bold underline">{"Code-related:"}</span>
           {
             " create issues, create/review PRs, give a star, answer questions from other devs (online: Github, Discord, StackOverflow or elsewhere; in-person: events like meetups)"
           }
-        </ListItem>
-        <ListItem>
-          <span className="font-black underline">{"Events:"}</span>
+        </li>
+        <li>
+          <span className="font-bold underline">{"Events:"}</span>
           {
             " organize (plan, look for sponsors, logistics)/advertise (write blog posts, share on social media)/sponsor"
           }
-        </ListItem>
-        <ListItem>
-          <span className="font-black underline">{"Educational content:"}</span>
+        </li>
+        <li>
+          <span className="font-bold underline">{"Educational content:"}</span>
           {" create lessons/courses, bootcamps"}
-        </ListItem>
-      </UnorderedList>
+        </li>
+      </ul>
       <Notes>
         <ul className="list-disc list-inside">
           <li>No need to be a developer or an expert to contribute</li>

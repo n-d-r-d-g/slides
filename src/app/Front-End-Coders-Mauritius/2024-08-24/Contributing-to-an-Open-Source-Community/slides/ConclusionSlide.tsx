@@ -1,14 +1,15 @@
-import { Heading, Notes, Slide, Text } from "spectacle";
+import { Heading } from "@/app/components/Heading";
+import { Notes, Slide, Text } from "spectacle";
 
 export function ConclusionSlide() {
   return (
     <Slide>
-      <Heading className="leading-tight">{"Conclusion"}</Heading>
-      <Text textAlign="center" className="italic leading-snug text-balance">
+      <Heading>{"Conclusion"}</Heading>
+      <p className="italic leading-snug text-5xl text-center text-balance p-4 m-4">
         {
           "It's a full circle. However, this can only keep going if we all help out."
         }
-      </Text>
+      </p>
       <Notes>
         <ul className="list-disc list-inside flex flex-col gap-5">
           <li>{"Find your own way to contribute"}</li>

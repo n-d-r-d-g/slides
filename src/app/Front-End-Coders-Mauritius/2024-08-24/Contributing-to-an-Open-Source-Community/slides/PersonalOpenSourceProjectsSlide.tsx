@@ -1,27 +1,28 @@
+import { Heading } from "@/app/components/Heading";
 import { StyledQRCode } from "@/app/components/StyledQRCode";
-import { FlexBox, Grid, Heading, Notes, Slide, Text } from "spectacle";
+import { FlexBox, Grid, Notes, Slide, Text } from "spectacle";
 
 export function PersonalOpenSourceProjectsSlide() {
   return (
     <Slide>
-      <Heading className="leading-tight">{"My projects"}</Heading>
-      <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={16}>
-        <FlexBox flexDirection="column">
-          <Text fontSize={40} fontWeight={900}>
+      <Heading>{"My projects"}</Heading>
+      <div className="grid grid-cols-[1fr_1fr] gap-4">
+        <div className="flex flex-col">
+          <p className="text-[2.5rem] text-center font-extrabold p-4 m-4">
             {"MUDOCS"}
-          </Text>
+          </p>
           <StyledQRCode value="mu-docs.netlify.app" prependHttps />
-        </FlexBox>
-        <FlexBox flexDirection="column">
-          <Text fontSize={40} fontWeight={900}>
+        </div>
+        <div className="flex flex-col">
+          <p className="text-[2.5rem] text-center font-extrabold p-4 m-4">
             {"Mauritius Tax Calculator"}
-          </Text>
+          </p>
           <StyledQRCode
             value="mauritius-tax-calculator.netlify.app"
             prependHttps
           />
-        </FlexBox>
-      </Grid>
+        </div>
+      </div>
       <Notes>
         <ol className="list-decimal list-inside flex flex-col gap-5">
           <li>

@@ -1,17 +1,14 @@
 import Image from "next/image";
-import { FlexBox, Grid, Heading, Slide } from "spectacle";
+import { Slide } from "spectacle";
+import { Heading } from "../../Heading";
 import { StyledQRCode } from "../../StyledQRCode";
 
 export function SelfIntroSlide() {
   return (
     <Slide>
-      <Heading className="leading-tight">{"Who am I?"}</Heading>
-      <Grid gridTemplateColumns="1fr auto" gridColumnGap={16}>
-        <Grid
-          gridTemplateColumns="auto 1fr"
-          className="place-content-start gap-6"
-          style={{ placeItems: "center start" }}
-        >
+      <Heading>{"Who am I?"}</Heading>
+      <div className="grid grid-cols-[1fr_auto] gap-4">
+        <div className="grid grid-cols-[auto_1fr] place-content-start place-items-[center_start] gap-6">
           <Image src="/logo.svg" alt="n-d-r-d-g logo" width={48} height={48} />
           <p className="text-4xl">
             {"I'm n-d-r-d-g"}{" "}
@@ -33,12 +30,12 @@ export function SelfIntroSlide() {
           <p className="text-4xl">{"Footballer"}</p>
           <Image src="/discord.svg" alt="discord logo" width={48} height={48} />
           <p className="text-4xl">{"n-d-r-d-g (feel free to chat)"}</p>
-        </Grid>
-        <FlexBox flexDirection="column" className="gap-12">
+        </div>
+        <div className="flex flex-col gap-12">
           <StyledQRCode value="n-d-r-d-g.com" size={160} prependHttps />
           <StyledQRCode value="github.com/n-d-r-d-g" size={160} prependHttps />
-        </FlexBox>
-      </Grid>
+        </div>
+      </div>
     </Slide>
   );
 }

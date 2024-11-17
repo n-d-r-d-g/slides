@@ -2,7 +2,7 @@ import { readdirSync } from "node:fs";
 import { AnimationModeSwitcher } from "./components/AnimationModeSwitcher";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import { TocNodes } from "./components/TocNodes";
-import { PAGE_PATH_ENDING } from "./constants";
+import { PAGE_PATH_ENDING } from "./utils/constants";
 import { TOC } from "./utils/classes/TOC";
 
 function retrieveTOCNodes() {
