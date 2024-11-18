@@ -9,13 +9,8 @@ import { useCallback } from "react";
 import { Deck } from "spectacle";
 import { SelfIntroSlide } from "../../../../components/slides/SelfIntroSlide";
 import { DECK_THEMES, NO_DECK_TRANSITION } from "../../../../utils/constants";
-// import { ConclusionSlide } from "./ConclusionSlide";
-// import { OpenSourceCharacteristicsSlide } from "./OpenSourceCharacteristicsSlide";
-// import { OpenSourceContributionSlide } from "./OpenSourceContributionSlide";
-// import { OpenSourceContributionsSlide } from "./OpenSourceContributionsSlide";
-// import { OpenSourceDefinitionSlide } from "./OpenSourceDefinitionSlide";
-// import { PersonalOpenSourceProjectsSlide } from "./PersonalOpenSourceProjectsSlide";
-import { ArrayDestructuringByIndex } from "./ArrayDestructuringByIndex";
+import { ArrayDestructuringByIndexSlide } from "./ArrayDestructuringByIndexSlide";
+import { CompoundFieldsConcatenationSlide } from "./CompoundFieldsConcatenationSlide";
 import { WelcomeSlide } from "./WelcomeSlide";
 
 export function JavaScriptAndTypeScriptTipsSlides() {
@@ -45,24 +40,18 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       <WelcomeSlide />
       {/* #2 */}
       <SelfIntroSlide />
-      {/*TODO: JS - destructuring array elements by index */}
-      {/*TODO: JS - compound fields concatenation */}
-      {/*TODO: JS - Object getters & setters */}
-      {/*TODO: TS - ReturnType */}
-      {/*TODO: TS - Array[number]["property"] */}
-      {/*TODO: TS - satisfies */}
       {/* #3 */}
-      <ArrayDestructuringByIndex />
+      <ArrayDestructuringByIndexSlide />
       {/* #4 */}
-      {/* <OpenSourceContributionSlide /> */}
+      <CompoundFieldsConcatenationSlide />
       {/* #5 */}
-      {/* <OpenSourceCharacteristicsSlide /> */}
+      {/*TODO: JS - Object getters & setters */}
       {/* #6 */}
-      {/* <PersonalOpenSourceProjectsSlide /> */}
+      {/*TODO: TS - ReturnType */}
       {/* #7 */}
-      {/* <OpenSourceContributionsSlide /> */}
+      {/*TODO: TS - Array[number]["property"] */}
       {/* #8 */}
-      {/* <ConclusionSlide /> */}
+      {/*TODO: TS - satisfies */}
       {/* #9 */}
       <QAndASlide />
     </Deck>
