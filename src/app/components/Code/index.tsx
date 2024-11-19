@@ -18,10 +18,15 @@ type Props = {
   children: string;
   lang?: BundledLanguage;
   theme?: BundledTheme;
+  defaultFontSize?: number;
   filename?: string;
 };
 
-function CopyToClipboard({ code }: { code: string }) {
+type CopyToClipboardProps = {
+  code: string;
+};
+
+function CopyToClipboard({ code }: CopyToClipboardProps) {
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(code);
@@ -42,10 +47,15 @@ function CopyToClipboard({ code }: { code: string }) {
   );
 }
 
-export function Code({ lang = "javascript", filename, children }: Props) {
+export function Code({
+  lang = "javascript",
+  defaultFontSize = 28,
+  filename,
+  children,
+}: Props) {
   const { resolvedTheme } = useTheme();
   const [htmlCode, setHTMLCode] = useState("");
-  const [fontSize, setFontSize] = useState(28);
+  const [fontSize, setFontSize] = useState(defaultFontSize);
   const [isLocked, setIsLocked] = useState(true);
   const strCode = useRef(children);
   const tempHTMLCode = useRef("");
