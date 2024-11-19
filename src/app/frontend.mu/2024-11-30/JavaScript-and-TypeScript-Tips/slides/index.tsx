@@ -14,6 +14,7 @@ import { ArrayOfObjectsTypeSlide } from "./ArrayOfObjectsTypeSlide";
 import { CompoundFieldsConcatenationSlide } from "./CompoundFieldsConcatenationSlide";
 import { ObjectGettersAndSettersSlide } from "./ObjectGettersAndSettersSlide";
 import { ReturnTypeSlide } from "./ReturnTypeSlide";
+import { VariableAnnotationVSSatisfiesSlide } from "./VariableAnnotationVSSatisfiesSlide";
 import { WelcomeSlide } from "./WelcomeSlide";
 
 export function JavaScriptAndTypeScriptTipsSlides() {
@@ -54,7 +55,7 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       {/* #7 */}
       <ArrayOfObjectsTypeSlide />
       {/* #8 */}
-      {/*TODO: TS - satisfies */}
+      <VariableAnnotationVSSatisfiesSlide />
       {/* #9 */}
       <QAndASlide />
     </Deck>
