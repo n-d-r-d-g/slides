@@ -10,6 +10,7 @@ import { Deck } from "spectacle";
 import { SelfIntroSlide } from "../../../../components/slides/SelfIntroSlide";
 import { DECK_THEMES, NO_DECK_TRANSITION } from "../../../../utils/constants";
 import { ArrayDestructuringByIndexSlide } from "./ArrayDestructuringByIndexSlide";
+import { ArrayOfObjectsTypeSlide } from "./ArrayOfObjectsTypeSlide";
 import { CompoundFieldsConcatenationSlide } from "./CompoundFieldsConcatenationSlide";
 import { ObjectGettersAndSettersSlide } from "./ObjectGettersAndSettersSlide";
 import { ReturnTypeSlide } from "./ReturnTypeSlide";
@@ -51,7 +52,7 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       {/* #6 */}
       <ReturnTypeSlide />
       {/* #7 */}
-      {/*TODO: TS - Array[number]["property"] */}
+      <ArrayOfObjectsTypeSlide />
       {/* #8 */}
       {/*TODO: TS - satisfies */}
       {/* #9 */}
