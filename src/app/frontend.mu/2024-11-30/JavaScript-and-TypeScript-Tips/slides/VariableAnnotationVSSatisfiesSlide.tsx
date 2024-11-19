@@ -9,12 +9,12 @@ export function VariableAnnotationVSSatisfiesSlide() {
       <div className="max-w-full h-[32rem] mx-auto">
         <Code lang="typescript">
           {`const config: Record<string, string | number> = {// [!code --]` +
-            `\n\twide: '100px',// [!code --]` +
-            `\n\tnarrow: 0,// [!code --]` +
+            `\n\twidth: '100px',// [!code --]` +
+            `\n\theight: 0,// [!code --]` +
             `\n};// [!code --]` +
             `\nconst config = {// [!code ++]` +
-            `\n\twide: '100px',// [!code ++]` +
-            `\n\tnarrow: 0,// [!code ++]` +
+            `\n\twidth: '100px',// [!code ++]` +
+            `\n\theight: 0,// [!code ++]` +
             `\n} satisfies Record<string, string | number>;// [!code ++]`}
         </Code>
       </div>
