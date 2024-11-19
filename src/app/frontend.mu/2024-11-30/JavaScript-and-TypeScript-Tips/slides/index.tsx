@@ -11,6 +11,7 @@ import { SelfIntroSlide } from "../../../../components/slides/SelfIntroSlide";
 import { DECK_THEMES, NO_DECK_TRANSITION } from "../../../../utils/constants";
 import { ArrayDestructuringByIndexSlide } from "./ArrayDestructuringByIndexSlide";
 import { CompoundFieldsConcatenationSlide } from "./CompoundFieldsConcatenationSlide";
+import { ObjectGettersAndSettersSlide } from "./ObjectGettersAndSettersSlide";
 import { WelcomeSlide } from "./WelcomeSlide";
 
 export function JavaScriptAndTypeScriptTipsSlides() {
@@ -45,7 +46,7 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       {/* #4 */}
       <CompoundFieldsConcatenationSlide />
       {/* #5 */}
-      {/*TODO: JS - Object getters & setters */}
+      <ObjectGettersAndSettersSlide />
       {/* #6 */}
       {/*TODO: TS - ReturnType */}
       {/* #7 */}
