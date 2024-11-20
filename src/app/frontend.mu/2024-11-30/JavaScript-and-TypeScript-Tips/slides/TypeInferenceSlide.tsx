@@ -17,6 +17,11 @@ export function TypeInferenceSlide() {
       </div>
       <Notes>
         <ul className="list-disc list-inside flex flex-col gap-2">
+          <li>
+            {
+              "PRO: we can add key-value pairs in config without modifying anything else (no type/interface needs modification)."
+            }
+          </li>
           <li>{"CON: config is not bound to any type."}</li>
         </ul>
       </Notes>
