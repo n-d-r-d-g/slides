@@ -14,6 +14,7 @@ import { ArrayOfObjectsTypeSlide } from "./ArrayOfObjectsTypeSlide";
 import { CompoundFieldsConcatenationSlide } from "./CompoundFieldsConcatenationSlide";
 import { ObjectGettersAndSettersSlide } from "./ObjectGettersAndSettersSlide";
 import { ReturnTypeSlide } from "./ReturnTypeSlide";
+import { TypeInferenceSlide } from "./TypeInferenceSlide";
 import { VariableAnnotationVSSatisfiesSlide } from "./VariableAnnotationVSSatisfiesSlide";
 import { WelcomeSlide } from "./WelcomeSlide";
 
@@ -55,8 +56,10 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       {/* #7 */}
       <ArrayOfObjectsTypeSlide />
       {/* #8 */}
-      <VariableAnnotationVSSatisfiesSlide />
+      <TypeInferenceSlide />
       {/* #9 */}
+      <VariableAnnotationVSSatisfiesSlide />
+      {/* #10 */}
       <QAndASlide />
     </Deck>
   );
