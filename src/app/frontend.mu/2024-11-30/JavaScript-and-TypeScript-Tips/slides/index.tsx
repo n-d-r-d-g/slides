@@ -11,11 +11,14 @@ import { SelfIntroSlide } from "../../../../components/slides/SelfIntroSlide";
 import { DECK_THEMES, NO_DECK_TRANSITION } from "../../../../utils/constants";
 import { ArrayDestructuringByIndexSlide } from "./ArrayDestructuringByIndexSlide";
 import { ArrayOfObjectsTypeSlide } from "./ArrayOfObjectsTypeSlide";
+import { CastingSlide } from "./CastingSlide";
 import { CompoundFieldsConcatenationSlide } from "./CompoundFieldsConcatenationSlide";
+import { ConstAssertionSlide } from "./ConstAssertionSlide";
 import { ObjectGettersAndSettersSlide } from "./ObjectGettersAndSettersSlide";
 import { ReturnTypeSlide } from "./ReturnTypeSlide";
+import { SatisfiesOperatorSlide } from "./SatisfiesOperatorSlide";
 import { TypeInferenceSlide } from "./TypeInferenceSlide";
-import { VariableAnnotationVSSatisfiesSlide } from "./VariableAnnotationVSSatisfiesSlide";
+import { VariableAnnotationSlide } from "./VariableAnnotationSlide";
 import { WelcomeSlide } from "./WelcomeSlide";
 
 export function JavaScriptAndTypeScriptTipsSlides() {
@@ -58,8 +61,14 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       {/* #8 */}
       <TypeInferenceSlide />
       {/* #9 */}
-      <VariableAnnotationVSSatisfiesSlide />
+      <ConstAssertionSlide />
       {/* #10 */}
+      <VariableAnnotationSlide />
+      {/* #11 */}
+      <CastingSlide />
+      {/* #12 */}
+      <SatisfiesOperatorSlide />
+      {/* #13 */}
       <QAndASlide />
     </Deck>
   );
