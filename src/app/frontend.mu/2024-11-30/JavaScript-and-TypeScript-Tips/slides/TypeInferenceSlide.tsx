@@ -12,17 +12,24 @@ export function TypeInferenceSlide() {
             `\n\twidth: '100px',` +
             `\n\theight: 0,` +
             `\n};` +
-            `\n\nconfig.depth; // Property 'depth' does not exist on type`}
+            `\nconfig.depth; // Property 'depth' does not exist on type` +
+            `\nconfig.width = '20px'; // Cannot assign to 'width' (read-only property)` +
+            `\nconfig.width; // Typed as string`}
         </Code>
       </div>
       <Notes>
         <ul className="list-disc list-inside flex flex-col gap-2">
           <li>
             {
-              "PRO: we can add key-value pairs in config without modifying anything else (no type/interface needs modification)."
+              "We can add key-value pairs to config during and after initialization without modifying anything else (no type/interface needs modification)."
             }
           </li>
-          <li>{"CON: config is not bound to any type."}</li>
+          <li>
+            {
+              "config is not bound to any type, i.e. we can add key-value pairs during config's initialization without modifying anything else."
+            }
+          </li>
+          <li>{"Key autocomplete works."}</li>
         </ul>
       </Notes>
     </Slide>
