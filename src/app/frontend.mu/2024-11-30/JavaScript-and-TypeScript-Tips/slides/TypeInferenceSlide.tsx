@@ -12,7 +12,7 @@ export function TypeInferenceSlide() {
             `\n\twidth: '100px',` +
             `\n\theight: 0,` +
             `\n};` +
-            `\n\nconfig.depth; // Property 'heights' does not exist on type`}
+            `\n\nconfig.depth; // Property 'depth' does not exist on type`}
         </Code>
       </div>
       <Notes>
