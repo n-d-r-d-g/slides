@@ -15,7 +15,7 @@ export function CastingSlide() {
             `\nconfig.depth = '40px';` +
             `\nconfig.width; //  Typed as string | number` +
             `\nconfig.width = 20;` +
-            `\nconfig.width; //  typed as number` +
+            `\nconfig.width; //  Typed as number` +
             `\nconfig.isActive = true; // Type 'boolean' is not assignable to type 'string | number'`}
         </Code>
       </div>

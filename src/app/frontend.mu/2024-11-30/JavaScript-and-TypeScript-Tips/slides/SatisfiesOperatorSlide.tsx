@@ -14,7 +14,7 @@ export function SatisfiesOperatorSlide() {
             `\n} satisfies Config;` +
             `\nconfig.depth = ''; // Property 'depth' does not exist on type '{ width: string; }'` +
             `\nconfig.width = 3; // Type 'number' is not assignable to type 'string'` +
-            `\nconfig.width; //  typed as string`}
+            `\nconfig.width; //  Typed as string`}
         </Code>
       </div>
       <Notes>
