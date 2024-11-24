@@ -15,10 +15,12 @@ export function ObjectGettersAndSettersSlide() {
             `\n\t\tthis.history.push({date: new Date(), text});` +
             `\n\t\tthis.text = text;` +
             `\n\t},` +
-            `\n\tget reverseHistory() {` +
+            `\n\tget reversedHistory() {` +
             `\n\t\treturn this.history.toReversed();` +
             `\n\t},` +
-            `\n}`}
+            `\n}` +
+            `\nobj.welcomeText = "Hello";` +
+            `\nobj.reversedHistory; // [{date: ..., text: "Hello"}]`}
         </Code>
       </div>
     </Slide>
