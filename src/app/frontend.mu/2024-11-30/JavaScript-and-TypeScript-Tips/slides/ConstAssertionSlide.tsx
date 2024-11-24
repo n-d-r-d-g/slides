@@ -14,7 +14,7 @@ export function ConstAssertionSlide() {
             `\n} as const;` +
             `\nconfig.depth; // Property 'depth' does not exist on type` +
             `\nconfig.width = ''; // Cannot assign to 'width' (read-only property)` +
-            `\nconfig.width; // strongly typed as 100px, not string`}
+            `\nconfig.width; // Typed as 100px, not string`}
         </Code>
       </div>
       <Notes>
