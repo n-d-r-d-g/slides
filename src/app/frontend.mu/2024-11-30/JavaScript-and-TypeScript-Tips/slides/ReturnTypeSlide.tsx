@@ -8,7 +8,11 @@ export function ReturnTypeSlide() {
       <Heading>{"ReturnType"}</Heading>
       <div className="max-w-full h-[32rem] mx-auto">
         <Code lang="typescript">
-          {`type Fn = StringConstructor | NumberConstructor | BooleanConstructor;` +
+          {`function func() {` +
+            `\n\treturn 'test';` +
+            `\n};` +
+            `\ntype X = ReturnType<typeof func>; // string` +
+            `\n\ntype Fn = StringConstructor | NumberConstructor | BooleanConstructor;` +
             `\n\nfunction cast<T extends Fn>(val: unknown, fn: T) {` +
             `\n\treturn fn(val) as ReturnType<typeof fn>;` +
             `\n}` +

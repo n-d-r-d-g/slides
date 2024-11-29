@@ -14,7 +14,9 @@ import { ArrayOfObjectsTypeSlide } from "./ArrayOfObjectsTypeSlide";
 import { CastingSlide } from "./CastingSlide";
 import { CompoundFieldsConcatenationSlide } from "./CompoundFieldsConcatenationSlide";
 import { ConstAssertionSlide } from "./ConstAssertionSlide";
+import { LinksSlide } from "./LinksSlide";
 import { ObjectGettersAndSettersSlide } from "./ObjectGettersAndSettersSlide";
+import { ObjectTypingSlide } from "./ObjectTypingSlide";
 import { ReturnTypeSlide } from "./ReturnTypeSlide";
 import { SatisfiesOperatorSlide } from "./SatisfiesOperatorSlide";
 import { TypeInferenceSlide } from "./TypeInferenceSlide";
@@ -59,16 +61,20 @@ export function JavaScriptAndTypeScriptTipsSlides() {
       {/* #7 */}
       <ArrayOfObjectsTypeSlide />
       {/* #8 */}
-      <TypeInferenceSlide />
+      <ObjectTypingSlide />
       {/* #9 */}
-      <ConstAssertionSlide />
+      <TypeInferenceSlide />
       {/* #10 */}
-      <VariableAnnotationSlide />
-      {/* #11 */}
       <CastingSlide />
+      {/* #11 */}
+      <ConstAssertionSlide />
       {/* #12 */}
-      <SatisfiesOperatorSlide />
+      <VariableAnnotationSlide />
       {/* #13 */}
+      <SatisfiesOperatorSlide />
+      {/* #14 */}
+      <LinksSlide />
+      {/* #15 */}
       <QAndASlide />
     </Deck>
   );

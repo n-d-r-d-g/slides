@@ -33,6 +33,7 @@ export function SatisfiesOperatorSlide() {
             }
           </li>
           <li>{"Key autocomplete works."}</li>
+          <li>{"`satisfies` was introduced in version 4.9."}</li>
         </ul>
       </Notes>
     </Slide>

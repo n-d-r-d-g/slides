@@ -13,7 +13,7 @@ export function TypeInferenceSlide() {
             `\n\theight: 0,` +
             `\n};` +
             `\nconfig.depth; // Property 'depth' does not exist on type` +
-            `\nconfig.width = '20px'; // Cannot assign to 'width' (read-only property)` +
+            `\nconfig.width = '20px';` +
             `\nconfig.width; // Typed as string`}
         </Code>
       </div>
@@ -21,7 +21,7 @@ export function TypeInferenceSlide() {
         <ul className="list-disc list-inside flex flex-col gap-2">
           <li>
             {
-              "We can add key-value pairs to config during and after initialization without modifying anything else (no type/interface needs modification)."
+              "We can only add key-value pairs to config during initialization (not after) without modifying anything else (no type/interface needs modification)."
             }
           </li>
           <li>
