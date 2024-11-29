@@ -11,7 +11,7 @@ export function ArrayDestructuringByIndexSlide() {
           {`const roles = ["ADMIN", "SUPERUSER", "USER"];` +
             `\nconst [admin, superuser] = roles;// [!code --]` +
             `\nconst {1: superuser} = roles;// [!code ++]` +
-            `\nconsole.log(superuser);`}
+            `\nconsole.log(superuser); // "SUPERUSER"`}
         </Code>
       </div>
     </Slide>
