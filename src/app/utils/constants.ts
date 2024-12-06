@@ -1,4 +1,5 @@
 export const PAGE_PATH_ENDING = "page.tsx";
+export const UNPUBLISHED_PAGE_ENDING_PREFIX = "_page.tsx";
 /* 
 {
   size: {

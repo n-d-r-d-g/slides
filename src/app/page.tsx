@@ -2,7 +2,10 @@ import { readdirSync } from "node:fs";
 import { AnimationModeSwitcher } from "./components/AnimationModeSwitcher";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import { TocNodes } from "./components/TocNodes";
-import { PAGE_PATH_ENDING } from "./utils/constants";
+import {
+  UNPUBLISHED_PAGE_ENDING_PREFIX,
+  PAGE_PATH_ENDING,
+} from "./utils/constants";
 import { TOC } from "./utils/classes/TOC";
 
 function retrieveTOCNodes() {
@@ -10,7 +13,11 @@ function retrieveTOCNodes() {
   const tocFilePaths = appFilePaths.filter((filePath) => {
     const isHomePagePath = filePath === PAGE_PATH_ENDING;
     const isPagePath = (filePath as string).endsWith(PAGE_PATH_ENDING);
-    const shouldPathBeInTOC = !isHomePagePath && isPagePath;
+    const isPageUnpublished = (filePath as string).endsWith(
+      UNPUBLISHED_PAGE_ENDING_PREFIX
+    );
+    const shouldPathBeInTOC =
+      !isHomePagePath && isPagePath && !isPageUnpublished;
 
     return shouldPathBeInTOC;
   });

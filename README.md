@@ -45,3 +45,4 @@ To fix this, open the slides in a new tab. This will make sure that the full URL
 - Clone your forked repository on your machine.
 - Run `npm i` in your terminal.
 - Run `npm run dev` to start the project.
+- Pages prefixed with an underscore, i.e. files named `_page.tsx`, are not referenced in the table of contents.
