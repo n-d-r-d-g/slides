@@ -11,14 +11,14 @@ export function PersonalOpenSourceProjectsSlide() {
           <p className="text-[2.5rem] text-center font-extrabold p-4 m-4">
             {"MUDOCS"}
           </p>
-          <StyledQRCode value="mu-docs.netlify.app" prependHttps />
+          <StyledQRCode value="docsmu.netlify.app" prependHttps />
         </div>
         <div className="flex flex-col">
           <p className="text-[2.5rem] text-center font-extrabold p-4 m-4">
             {"Mauritius Tax Calculator"}
           </p>
           <StyledQRCode
-            value="mauritius-tax-calculator.netlify.app"
+            value="taxmu.netlify.app"
             prependHttps
           />
         </div>
