@@ -11,7 +11,7 @@ export function SelfIntroSlide() {
         <div className="grid grid-cols-[auto_1fr] place-content-start place-items-[center_start] gap-6">
           <Image src="/logo.svg" alt="n-d-r-d-g logo" width={48} height={48} />
           <p className="text-4xl">
-            {"I'm n-d-r-d-g"}{" "}
+            {"n-d-r-d-g"}{" "}
             <span className="italic">{'(pronounced "underdog")'}</span>
           </p>
           <Image
@@ -28,8 +28,8 @@ export function SelfIntroSlide() {
             height={48}
           />
           <p className="text-4xl">{"Footballer"}</p>
-          <Image src="/discord.svg" alt="discord logo" width={48} height={48} />
-          <p className="text-4xl">{"n-d-r-d-g (feel free to chat)"}</p>
+          <Image src="/linkedin.svg" alt="linkedin logo" width={48} height={48} />
+          <p className="text-4xl">{"Anish A. (feel free to chat)"}</p>
         </div>
         <div className="flex flex-col gap-12">
           <StyledQRCode value="n-d-r-d-g.com" size={160} prependHttps />
